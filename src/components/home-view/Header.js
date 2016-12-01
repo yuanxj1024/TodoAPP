@@ -63,4 +63,11 @@ const styles = StyleSheet.create({
         fontSize: 10,
         fontStyle: 'italic'
     },
+    add: {
+        position: 'absolute',
+        right: 8,
+        bottom: 8
+    }
 });
+
+export default Header;
