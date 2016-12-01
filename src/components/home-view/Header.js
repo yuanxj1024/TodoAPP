@@ -1,5 +1,9 @@
+/**
+ *
+ */
 import React, {Component} from "react";
-import {Dimensions} from "react-native";
+import {StyleSheet, Dimensions, View, Image, Text, TouchableHighlight} from "react-native";
+import {Theme} from "../../styles";
 
 let {height, width} = Dimensions.get('window');
 
