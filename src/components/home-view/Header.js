@@ -21,7 +21,7 @@ class Header extends Component {
                        source={require('./img/chalkboard.png')}>
                     <Image style={styles.img} source={require('./img/todo.png')}/>
                     <Text style={[styles.text, styles.title]}>
-                        Todo
+                        Todo App
                     </Text>
                     <Text style={[styles.text, styles.subTitle]}>
                         React Native+Redux Demo for React Native Training
