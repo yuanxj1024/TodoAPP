@@ -24,3 +24,16 @@ var logger = createLogger({
   collapsed: true,
   duration: true,
 });
+
+var middlewares = compose(applyMiddleware(thunk, logger), autoRehydrate());
+
+export default function configureStore() {
+  const store = createStore(reducers, undefined, middlewares);
+  persistStore(store, {
+    storage: AsyncStorage,
+  });
+  if (isDebuggingInChrome) {
+    window.store = store;
+  }
+  return store;
+}
