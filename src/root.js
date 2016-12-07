@@ -4,7 +4,7 @@
 import React, {Component} from "react";
 import {View, StyleSheet} from "react-native";
 import {Provider} from 'react-redux';
-import {Header} from "./components/home-view";
+import {Header,Main} from "./components/home-view";
 
 // import App from './containers/App';
 import configureStore from './store/configureStore';
@@ -15,6 +15,7 @@ class Root extends Component {
       <Provider store={configureStore()}>
         <View style={styles.container}>
           <Header></Header>
+          <Main></Main>
         </View>
       </Provider>
     );

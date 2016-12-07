@@ -74,7 +74,7 @@ class ListItem extends Component {
     handleCompleted = () =>{
         this.endTimer();
         // TODO
-        // this.props.actions.completeTodo(this.props.data.id);
+        this.props.actions.completeTodo(this.props.data.id);
     }
 
     handleEdit = () => {
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     },
     timer: {
         fontSize: 12,
-        fontstyle: 'italic'
+        fontStyle: 'italic'
     }
 });
 
