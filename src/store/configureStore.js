@@ -35,5 +35,6 @@ export default function configureStore() {
   if (isDebuggingInChrome) {
     window.store = store;
   }
+  console.log(store, store.getState());
   return store;
 }

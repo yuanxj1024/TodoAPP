@@ -48,6 +48,8 @@ class Main extends Component {
   }
 
   render() {
+    console.log('main props', this.props);
+    console.log('this context', this.context)
     return (
       <View style={styles.container}>
         {this.renderLoading()}
