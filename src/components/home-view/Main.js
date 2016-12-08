@@ -41,15 +41,11 @@ class Main extends Component {
         </View>
       );
     }
-    return (
-      <View>
-        <Text> no mo data</Text>
-      </View>);
+    return null;
   }
 
   render() {
     console.log('main props', this.props);
-    console.log('this context', this.context)
     return (
       <View style={styles.container}>
         {this.renderLoading()}

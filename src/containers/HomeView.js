@@ -16,12 +16,13 @@ class HomeView extends Component {
   }
 
   componentDidMount() {
-    this.currentRoute = this.props.navigator.navigationContext.currentRoute;
+    // this.currentRoute = this.props.navigator.navigationContext.currentRoute;
     // this.bindEvents();
     // this.props.actions.fetchAllTodos();
   }
 
   render() {
+    console.log('homeView', this.props);
     return (
       <View style={styles.container}>
         <Header {...this.props}/>
