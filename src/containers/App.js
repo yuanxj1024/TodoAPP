@@ -11,17 +11,17 @@ import {
   Navigator
 } from 'react-native';
 import MainTabsView from './MainTabsView';
-import EditView from './EditView';
-import BroswerView from './BroswerView';
+// import EditView from './EditView';
+// import BroswerView from './BroswerView';
 
 const ROUTES = {
   MainTabsView,
-  BroswerView,
-  EditView,
+  // BroswerView,
+  // EditView,
 };
 
 
-const App Extends Coponent {
+class App extends Coponent {
   renderScene = (route, navigator) => {
     let Scene = ROUTER[route.name];
     return <Scene {...route} navigator={navigator} />;
@@ -37,4 +37,22 @@ const App Extends Coponent {
     }
   }
 
+  render() {
+    return (
+      <View style={styles.container}>
+        <StatusBar barStyle="light-content" />
+        <Navigator
+          initialRoute={{name:'MainTabsView'}}
+          renderScene={this.renderScene}
+          configureScene={this.configureScene}>
+        </Navigator>
+      </View>
+    );
+  }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+});

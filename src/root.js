@@ -6,17 +6,19 @@ import {View, StyleSheet} from "react-native";
 import {Provider} from 'react-redux';
 // import {Header,Main} from "./components/home-view";
 import HomeView from './containers/HomeView';
+import App from './containers/App';
 
 // import App from './containers/App';
 import configureStore from './store/configureStore';
 
+        // <View style={styles.container}>
+        //   <HomeView></HomeView>
+        // </View>
 class Root extends Component {
   render() {
     return (
       <Provider store={configureStore()}>
-        <View style={styles.container}>
-          <HomeView></HomeView>
-        </View>
+        <App/>
       </Provider>
     );
   }

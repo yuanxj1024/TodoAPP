@@ -8,7 +8,7 @@ import Actions from '../actions';
 
 class MainTabsView extends Component {
   renderTab = (idx) => {
-    cosnt {navigator} = this.props;
+    const {navigator} = this.props;
     switch (idx) {
       case 0:
         return <HomeView navigator={navigator}/>;
