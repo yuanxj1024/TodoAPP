@@ -22,7 +22,7 @@ class MainTabsView extends Component {
       case 2:
         return (
           <View>
-            <Text>Completed</Text>
+            <Text>BroswerView</Text>
           </View>
         );
       default:
