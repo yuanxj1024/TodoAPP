@@ -21,9 +21,9 @@ const ROUTES = {
 };
 
 
-class App extends Coponent {
+class App extends Component {
   renderScene = (route, navigator) => {
-    let Scene = ROUTER[route.name];
+    let Scene = ROUTES[route.name];
     return <Scene {...route} navigator={navigator} />;
   }
 
@@ -56,3 +56,5 @@ const styles = StyleSheet.create({
     flex: 1
   }
 });
+
+export default App;
