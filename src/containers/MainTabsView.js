@@ -33,7 +33,7 @@ class MainTabsView extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Main {...this.props} renderTab={this.renderTab}/>
+        <Main style={styles.main} {...this.props} renderTab={this.renderTab}/>
       </View>
     );
   }
@@ -43,6 +43,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  main:{
+    alignItems: 'stretch',
+    backgroundColor: 'blue'
+  }
 });
 
 function mapStateToProps(state) {

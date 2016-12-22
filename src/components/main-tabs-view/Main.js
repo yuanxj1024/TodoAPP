@@ -21,7 +21,6 @@ class Main extends Component {
 
   render(){
     const {renderTab, tab} = this.props;
-    console.log('height', height)
     return (
       <TabNavigator
         style={styles.container}>
@@ -60,10 +59,11 @@ class Main extends Component {
 
 const styles = StyleSheet.create({
   container:{
-    flex:1
+    flex: 1,
+    // backgroundColor: 'green'
   },
   item:{
-    height: height - 49
+    height: 49
   }
 });
 export default Main;

@@ -45,7 +45,6 @@ class Main extends Component {
   }
 
   render() {
-    console.log('main props', this.props);
     return (
       <View style={styles.container}>
         {this.renderLoading()}
@@ -59,7 +58,9 @@ class Main extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
+    height: 600,
+    backgroundColor: 'yellow',
   },
   loading: {
     paddingTop: 10,
@@ -71,7 +72,9 @@ const styles = StyleSheet.create({
   },
   list: {
     flex: 1,
-    padding: 20
+    padding: 20,
+    // height: 600,
+    // backgroundColor: 'yellow',
   }
 });
 
