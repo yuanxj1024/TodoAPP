@@ -72,9 +72,7 @@ const styles = StyleSheet.create({
   },
   list: {
     flex: 1,
-    padding: 20,
-    // height: 600,
-    // backgroundColor: 'yellow',
+    padding: 20
   }
 });
 
