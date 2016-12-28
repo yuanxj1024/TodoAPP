@@ -45,7 +45,7 @@ class ListItem extends Component {
           activeOpacity={Theme.active.opacity}
           underlayColor="transparent"
           onPress={this.handleDelete}>
-          <Image />
+          <Image style={styles.btnIcon} source={require('./img/erase.png')} />
         </TouchableHighlight>
         <TouchableHighlight>
         </TouchableHighlight>
